@@ -11,8 +11,8 @@ android {
         applicationId "com.obsessionmediagroup.mensobsession"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 201
+        versionName "2.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
