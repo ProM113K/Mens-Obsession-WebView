@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowInsetsCompat
 
 @SuppressLint("StaticFieldLeak")
@@ -14,7 +15,9 @@ private lateinit var webView: WebView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
         webView = findViewById(R.id.mo_webView)
 
         WindowInsetsCompat.Type.navigationBars()
